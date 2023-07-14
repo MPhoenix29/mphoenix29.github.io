@@ -1,0 +1,77 @@
+$base-color-hover: #333;
+$color-rarity-5: #dca454;
+$color-rarity-4: #9174a9;
+$color-anemo: #359697;
+$color-geo: #debd6c;
+$color-electro: #945dc4;
+$color-dendro: #608a00;
+$color-hydro: #00BFFF;
+$color-pyro: #EC4923;
+$color-cryo: #4682B4;
+
+div {
+    float: left;
+    border: 2px solid $base-color-hover;
+    border-left-width: .5em;
+    margin: .5em;
+    padding: .5em .5em .5em 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    width: 14em;
+    text-align: center;
+    border-radius: .5em;
+    transition: border-color .5s ease-out, background-color 1s ease-out;
+    &:hover, &.selected {
+        background-color: $base-color-hover;
+        cursor: pointer;
+        border-color: $base-color-hover;
+    }
+    &.rarity-5, &.rarity-5.selected {
+        background-image: linear-gradient(160deg, transparent, 85%, $color-rarity-5);
+    }
+    &.rarity-4, &.rarity-4.selected {
+        background-image: linear-gradient(160deg, transparent, 85%, $color-rarity-4);
+    }
+    &.anemo {
+        border-left-color: $color-anemo;
+        &.selected {
+            border-color: $color-anemo;
+        }
+    }
+    &.geo {
+        border-left-color: $color-geo;
+        &.selected {
+            border-color: $color-geo;
+        }
+    }
+    &.electro {
+        border-left-color: $color-electro;
+        &.selected {
+            border-color: $color-electro;
+        }
+    }
+    &.dendro {
+        border-left-color: $color-dendro;
+        &.selected {
+            border-color: $color-dendro;
+        }
+    }
+    &.hydro {
+        border-left-color: $color-hydro;
+        &.selected {
+            border-color: $color-hydro;
+        }
+    }
+    &.pyro {
+        border-left-color: $color-pyro;
+        &.selected {
+            border-color: $color-pyro;
+        }
+    }
+    &.cryo {
+        border-left-color: $color-cryo;
+        &.selected {
+            border-color: $color-cryo;
+        }
+    }
+}
