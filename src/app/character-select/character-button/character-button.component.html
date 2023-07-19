@@ -1,3 +1,8 @@
-<div (click)="toggle()" ngClass="{{character.element | lowercase}} rarity-{{character.rarity}} {{selected ? 'selected' : ''}}">
-    {{character.name}}
+<div (click)="toggle()" ngClass="{{character.element | lowercase}} rarity-{{character.rarity}} {{selected ? 'selected' : ''}} character-button">
+    <div
+      class="character-image-container"
+      style="background-image: url({{character['image-url']}})"
+    >
+      {{character.name}}
+    </div>
 </div>

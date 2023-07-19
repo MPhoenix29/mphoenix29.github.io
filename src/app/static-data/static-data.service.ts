@@ -29,4 +29,5 @@ export interface Character {
   "name": string
   "element": string
   "rarity": number
+  "image-url": string | undefined
 }

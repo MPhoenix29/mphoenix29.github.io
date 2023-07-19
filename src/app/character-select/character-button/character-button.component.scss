@@ -10,11 +10,11 @@ $color-pyro: #EC4923;
 $color-cryo: #4682B4;
 
 div {
+  &.character-button {
     float: left;
     border: 2px solid $base-color-hover;
-    border-left-width: .5em;
+    border-left-width: .4em;
     margin: .5em;
-    padding: .5em .5em .5em 0;
     font-size: 2em;
     text-transform: uppercase;
     width: 14em;
@@ -22,56 +22,63 @@ div {
     border-radius: .5em;
     transition: border-color .5s ease-out, background-color 1s ease-out;
     &:hover, &.selected {
-        background-color: $base-color-hover;
-        cursor: pointer;
-        border-color: $base-color-hover;
+      background-color: $base-color-hover;
+      cursor: pointer;
+      border-color: $base-color-hover;
     }
     &.rarity-5, &.rarity-5.selected {
-        background-image: linear-gradient(160deg, transparent, 85%, $color-rarity-5);
+      background-image: linear-gradient(160deg, transparent, 85%, $color-rarity-5);
     }
     &.rarity-4, &.rarity-4.selected {
-        background-image: linear-gradient(160deg, transparent, 85%, $color-rarity-4);
+      background-image: linear-gradient(160deg, transparent, 85%, $color-rarity-4);
     }
     &.anemo {
-        border-left-color: $color-anemo;
-        &.selected {
-            border-color: $color-anemo;
-        }
+      border-left-color: $color-anemo;
+      &.selected {
+        border-color: $color-anemo;
+      }
     }
     &.geo {
-        border-left-color: $color-geo;
-        &.selected {
-            border-color: $color-geo;
-        }
+      border-left-color: $color-geo;
+      &.selected {
+        border-color: $color-geo;
+      }
     }
     &.electro {
-        border-left-color: $color-electro;
-        &.selected {
-            border-color: $color-electro;
-        }
+      border-left-color: $color-electro;
+      &.selected {
+        border-color: $color-electro;
+      }
     }
     &.dendro {
-        border-left-color: $color-dendro;
-        &.selected {
-            border-color: $color-dendro;
-        }
+      border-left-color: $color-dendro;
+      &.selected {
+        border-color: $color-dendro;
+      }
     }
     &.hydro {
-        border-left-color: $color-hydro;
-        &.selected {
-            border-color: $color-hydro;
-        }
+      border-left-color: $color-hydro;
+      &.selected {
+        border-color: $color-hydro;
+      }
     }
     &.pyro {
-        border-left-color: $color-pyro;
-        &.selected {
-            border-color: $color-pyro;
-        }
+      border-left-color: $color-pyro;
+      &.selected {
+        border-color: $color-pyro;
+      }
     }
     &.cryo {
-        border-left-color: $color-cryo;
-        &.selected {
-            border-color: $color-cryo;
-        }
+      border-left-color: $color-cryo;
+      &.selected {
+        border-color: $color-cryo;
+      }
     }
+  }
+  .character-image-container {
+    padding: .5em .5em .5em 0;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: -4em -1em;
+  }
 }
